@@ -4,13 +4,13 @@
   "files": [
     {
       "path": "index.html",
-      "bytes": 57646,
-      "sha256": "fbdb0edf7664b2a311d89ffd51494bd823bccb8dcc22c52cfa888a97e4c31a22"
+      "bytes": 62621,
+      "sha256": "989a7f8a97ff66f51133d794e64d560121f8d42029d807fb6e1ba1a837b4f012"
     },
     {
       "path": "diagnostics.js",
-      "bytes": 10502,
-      "sha256": "1cf463bf1190b2650f29a7b957c9ed84d889dd524fcf7f06c8af87bd2cb8a769"
+      "bytes": 10754,
+      "sha256": "21c5166c7994ff1a2f287875513d33efad23005f26800074496388c88663a564"
     },
     {
       "path": "upper.png",
@@ -21,6 +21,31 @@
       "path": "lower.png",
       "bytes": 2333596,
       "sha256": "942faf3dea54653a665946a894c07110c14ff2462aa2b7397858c1d6ec452ca1"
+    },
+    {
+      "path": "bunk-detail.jpg",
+      "bytes": 255558,
+      "sha256": "d1078ce546438bc672b8122081a3a8146cd40ae1aef8f78cf9263c51653dddd9"
+    },
+    {
+      "path": "passenger-detail.jpg",
+      "bytes": 256411,
+      "sha256": "e95b0fe98ed027215dfc2dbb86e40294bce74949bbda9db00394d8f969abda10"
+    },
+    {
+      "path": "shuttle-detail.jpg",
+      "bytes": 249860,
+      "sha256": "01c58e5b9c02ea2433a01732b69d66dd9073c9c2330c5dd386676355f41fc4d4"
+    },
+    {
+      "path": "wreck-detail.jpg",
+      "bytes": 213448,
+      "sha256": "fefba567990efc07840d89c548eef5ea5a5faefd43bddb0df0f6a1e79b8fcdfa"
+    },
+    {
+      "path": "serenity.png",
+      "bytes": 550744,
+      "sha256": "8361933dd563480db07a8c751b3f210d1af46d5852134f2e6e113cd3d79260eb"
     }
   ]
 }

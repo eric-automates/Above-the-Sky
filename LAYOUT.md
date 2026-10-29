@@ -20,3 +20,5 @@ The active upper- and lower-deck floors and outlines are drawn from the same sim
 - [Firefly-class ship overview](https://gamerant.com/firefly-class-starship-serenity-explained/): fore-to-aft room order and deck connections.
 - [Photographs of the official plans](https://dispersertracks.com/2014/05/14/firefly-limited-edition-serenity-blueprints/): useful visual cross-section and deck-plan context. These images are references, not bundled game assets.
 - [Official blueprint information](https://firefly.fandom.com/wiki/Serenity_Blueprints): credits Geoffrey Mandel and Timothy M. Earls and identifies the main, mid and lower deck sheets.
+
+The touch update adds generated exterior, bunk, passenger, shuttle and derelict artwork. These are visual interpretations, not measured official plans; the AI images and interactable/collision geometry do not always match precisely.
