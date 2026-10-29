@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 57646,
+      "sha256": "fbdb0edf7664b2a311d89ffd51494bd823bccb8dcc22c52cfa888a97e4c31a22"
+    },
+    {
+      "path": "diagnostics.js",
+      "bytes": 10502,
+      "sha256": "1cf463bf1190b2650f29a7b957c9ed84d889dd524fcf7f06c8af87bd2cb8a769"
+    },
+    {
+      "path": "upper.png",
+      "bytes": 2200612,
+      "sha256": "24086c4f862a2a38b7966ffd0f738ab0d66b69c7c739bb8615cbdae666edd856"
+    },
+    {
+      "path": "lower.png",
+      "bytes": 2333596,
+      "sha256": "942faf3dea54653a665946a894c07110c14ff2462aa2b7397858c1d6ec452ca1"
+    }
+  ]
+}
