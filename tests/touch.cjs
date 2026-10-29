@@ -1,0 +1,9 @@
+// Logic-only touch and projectile checks: node tests/touch.cjs
+const fs=require('fs'),vm=require('vm'),path=require('path');let html=fs.readFileSync(path.join(__dirname,'../index.html'),'utf8'),code=html.match(/<script>([\s\S]*)<\/script>/)[1];
+const ctx=new Proxy({},{get:(o,k)=>o[k]||(()=>{}),set:(o,k,v)=>(o[k]=v,true)}),els={};function el(id){return els[id]||={style:{},classList:{add(){},remove(){},toggle(){}},append(){},setAttribute(){},addEventListener(){},getContext(){return ctx},getBoundingClientRect(){return {width:1000,height:600,left:0,top:0}},setPointerCapture(){},textContent:'',innerHTML:''}}
+const env={console,Math,Date,JSON,performance:{now:()=>Date.now()},Image:class{constructor(){this.complete=true;this.naturalWidth=1000;this.naturalHeight=600}},document:{querySelector:el,querySelectorAll(){return []},createElement:()=>el(Math.random())},window:{addEventListener(){}},localStorage:{getItem(){return null},setItem(){}},requestAnimationFrame(){},setTimeout(){},clearTimeout(){},devicePixelRatio:1,confirm:()=>true};vm.createContext(env);vm.runInContext(code,env);vm.runInContext(`
+function assert(v,m){if(!v)throw Error(m)}
+function tapWorld(x,y){orderWalk({clientX:500+(x-s.x)*zoom,clientY:300+(y-s.y)*zoom})}
+tapWorld(145,280);assert(walkJob&&walkJob.id==='bridge','far object did not create approach');for(let i=0;i<500&&!modal;i++)tick(.016);assert(modal&&s.x<190,'approach did not interact');close();goDeck('upper',350,300);tapWorld(430,300);assert(walkJob&&!walkJob.id,'ground should be a walk destination');for(let i=0;i<500&&walkJob;i++)tick(.016);assert(Math.hypot(s.x-430,s.y-300)<12,'ground walk failed');
+goDeck('upper',280,300);armed=true;enemies.push({x:340,y:300,deck:'upper',hp:50});fireAt({x:340,y:300});for(let i=0;i<40;i++)updateShots(.016);assert(enemies[0].hp===32,'pistol projectile did not damage target');console.log('PASS: touch-to-approach, ground pathfinding, and projectile collision.');
+`,env);
